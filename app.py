@@ -1,16 +1,16 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, url_for
 
 app = Flask(__name__)
 
 
 @app.route("/")
 def home():
-	return render_template("index.html")
+	return render_template("/index.html")
 
 
 @app.route("/projects")
 def projects():
-	return  render_template("projects.html")
+	return render_template("projects.html")
 
 
 @app.route("/skills")
@@ -25,7 +25,7 @@ def experience():
 
 @app.route("/education")
 def education():
-	return render_template("education/html")
+	return render_template("education.html")
 
 
 if __name__ == "__main__":

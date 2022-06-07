@@ -1,8 +1,22 @@
+.navbar {
+  background-color: #A9A9A9;
+  display: flex;
+}
 
-nav ul li:first-child {float:left; }
-
-nav ul li {
-    list-style:none;
-    margin:10px;
+.navbar ul li {
+    list-style-type: none;
     float:left;
+    margin: 10px 20px 10px 20px;
+    font-size: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #2F4F4F;
+}
+
+#name-logo {
+    margin-right: 450px !important;
+    text-transform: none;
 }

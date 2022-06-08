@@ -2,21 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+
     <link rel="stylesheet" href="../static/css/base.css">
+
     {% block stylesheet %}{% endblock %}
+
     <title>Renad Gharz | {% block title %}{% endblock %}</title>
+
 </head>
 <body>
     <div class="main">
         <nav class="navbar">
-            <ul>
-                <li><a href="{{ url_for('home') }}" id="name-logo">Renad Gharz</a></li>
+            <div class="logo">
+                <h4>Renad Gharz</h4>
+            </div>
+            <ul class="nav-links">
                 <li><a href="{{ url_for('home') }}">Home</a></li>
                 <li><a href="{{ url_for('projects') }}">Projects</a></li>
                 <li><a href="{{ url_for('skills') }}">Skills</a></li>
                 <li><a href="{{ url_for('experience') }}">Experience</a></li>
                 <li><a href="{{ url_for('education') }}">Education</a></li>
             </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
         </nav>
 
         <div class="content">
@@ -24,5 +35,6 @@
             {% endblock %}
         </div>
     </div>
+    <script src="../static/js/base.js"></script>
 </body>
 </html>

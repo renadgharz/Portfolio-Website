@@ -3,20 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="../static/css/base.css">
+    {% block stylesheet %}{% endblock %}
     <title>Renad Gharz | {% block title %}{% endblock %}</title>
 </head>
 <body>
-    <nav class="navbar">
-        <ul>
-            <li><a href="{{ url_for('home') }}" id="name-logo">Renad Gharz</a></li>
-            <li><a href="{{ url_for('home') }}">Home</a></li>
-            <li><a href="{{ url_for('projects') }}">Projects</a></li>
-            <li><a href="{{ url_for('skills') }}">Skills</a></li>
-            <li><a href="{{ url_for('experience') }}">Experience</a></li>
-            <li><a href="{{ url_for('education') }}">Education</a></li>
-        </ul>
-    </nav>
-    {% block content %}
-    {% endblock %}
+    <div class="main">
+        <nav class="navbar">
+            <ul>
+                <li><a href="{{ url_for('home') }}" id="name-logo">Renad Gharz</a></li>
+                <li><a href="{{ url_for('home') }}">Home</a></li>
+                <li><a href="{{ url_for('projects') }}">Projects</a></li>
+                <li><a href="{{ url_for('skills') }}">Skills</a></li>
+                <li><a href="{{ url_for('experience') }}">Experience</a></li>
+                <li><a href="{{ url_for('education') }}">Education</a></li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            {% block content %}
+            {% endblock %}
+        </div>
+    </div>
 </body>
 </html>

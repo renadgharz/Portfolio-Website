@@ -1,0 +1,6 @@
+#profile-pic {
+    width: 35%;
+    height: 35%;
+    border-radius: 50%;
+    border: 10px double #708090;
+}

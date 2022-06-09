@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block stylesheet %}
-    <link rel="stylesheet" href="../static/css/projects.css">
+    <link href="../static/css/projects.css" rel="stylesheet">
 {% endblock %}
 
 
@@ -11,5 +11,41 @@
 {% block header %}Projects{% endblock %}
 
 {% block content %}
-<p>stuff that's gonna be on the projects page</p>
+<div class="project">
+    <h2 class="project-name">CS:GO Esports Database</h2>
+    <h3 class="project-summary">SQL database server for professional CS:GO players, teams, and events</h3>
+    <h4 class="project-tools">Python (pandas, BeautifulSoup, Selenium, pymssql, SQLAlchemy), SQL, Docker, SSMS, Visio, Ubuntu, Proxmox</h4>
+    <ul class="project-description">
+        <li>Created entity relationship diagrams to plan and visualize the various elements of the database and their interactions (relations) using <i>Visio</i>, as well as the data pipelines that represented the process from getting the data to storing in the database server.</li>
+        <li>Used <i>pandas</i>, <i>Beautifulsoup4</i> and <i>Selenium</i> to scrape professional CS:GO players’- and teams’ performance statistics from HLTV.org into <i>pandas</i> dataframes.</li>
+        <li>Created an <i>Ubuntu</i>-based Linux container template on a self-hosted <i>Proxmox</i> server to host a <i>Microsoft SQL Server image</i> inside a <i>Docker</i> container; and used the <i>pymssql</i> and <i>SQLAlchemy</i> libraries in <i>Python</i> to connect to the database and send the <i>pandas</i> dataframes to the database server.</li>
+        <li>Managed the database using <i>Microsoft SQL Studio Management Studio (SSMS)</i>.</li>
+    </ul>
+</div>
+
+<div class="project">
+    <h2 class="project-name">Internet Speeds Data Visualization</h2>
+    <h3 class="project-summary">Visualizations of an internet speeds dataset in Power BI and R</h3>
+    <h4 class="project-tools">Power BI, R ()</h4>
+    <ul class="project-description">
+
+    </ul>
+</div>
+
+<div class="project">
+    <h2 class="project-name">Supermarket Sales Regression Analysis</h2>
+    <h3 class="project-summary">Regression analysis performed on a supermarket sales dataset</h3>
+    <h4 class="project-tools">R ()</h4>
+    <ul class="project-description">
+
+    </ul>
+</div>
+<div class="project">
+    <h2 class="project-name">Portfolio Website</h2>
+    <h3 class="project-summary">Website to showcase my various projects</h3>
+    <h4 class="project-tools">Python (Flask), HTML, CSS, JavaScript </h4>
+    <ul class="project-description">
+
+    </ul>
+</div>
 {% endblock %}

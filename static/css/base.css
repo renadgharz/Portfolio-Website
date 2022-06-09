@@ -5,9 +5,7 @@
     box-sizing: border-box;
 }
 
-.main {
-
-}
+.main {}
 
 /* NAV BAR */
 .navbar {
@@ -115,9 +113,7 @@
 
 /* CONTENT DIV */
 .content {
-    margin-top: 1vh;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin: 2.5vh 10% 2.5vh 10%;
     border: 4px solid #708090;
     border-radius: 7.5px;
     padding: 1.5vh;
@@ -134,4 +130,5 @@
     background-color: #708090;
     border-radius: 5px;
     margin-top: 1px;
+    margin-bottom: 2vh;
 }

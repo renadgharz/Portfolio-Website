@@ -1,0 +1,29 @@
+.project {
+    margin-bottom: 5vh;
+}
+
+.project-name {
+    color: #4682B4;
+    font-size: 35px;
+}
+
+.project-summary {
+    margin-top: 0.5vh;
+    color: #4682B4;
+    font-size: 27.5px;
+    font-style: italic;
+}
+
+.project-tools {
+    margin-top: 0.5vh;
+    color: #4682B4;
+    font-size: 20px;
+}
+
+.project-description {
+    margin-top: 2vh;
+    padding-left: 1.5vh;
+    font-size: 17.5px;
+    text-align: justify;
+    text-justify: auto;
+}

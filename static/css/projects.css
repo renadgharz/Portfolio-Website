@@ -2,9 +2,22 @@
     margin-bottom: 5vh;
 }
 
+.project-name-icon-alignment {
+    display: flex;
+}
+
 .project-name {
     color: #4682B4;
     font-size: 35px;
+}
+
+.project-github-icon {
+    width: 3.5vh;
+    height: 3.5vh;
+    border-radius: 50%;
+    background-color: #F5F5F5;
+    margin-top: 7.5px;
+    margin-left: 1vh;
 }
 
 .project-summary {

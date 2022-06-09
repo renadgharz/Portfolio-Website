@@ -1,6 +1,35 @@
+#profile {
+    display: flex;
+    align-items: center;
+}
+
 #profile-pic {
     width: 35%;
     height: 35%;
     border-radius: 50%;
     border: 10px double #708090;
+    margin: 3.5vh 5% 3.5vh 7.5%;
+}
+
+#info-about-me {
+    margin-right: 7.5%;
+    font-size: 18px;
+    text-align: justify;
+}
+
+#downloads-contacts {
+
+}
+
+#contacts {
+    margin: 1.25vh 5% 2.5vh 15%;
+}
+
+#contact-heading {
+    color: #708090;
+    font-size: 30px;
+}
+
+.contact-info {
+    font-size: 18px;
 }

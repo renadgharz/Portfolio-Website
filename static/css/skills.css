@@ -1,5 +1,5 @@
 .skills-group {
-
+    margin-bottom: 3.25vh;
 }
 
 .skills-group-heading {
@@ -8,5 +8,20 @@
 }
 
 .skills-table {
-
+    font-size: 20px;
+    margin-left: 5vh;
+    border-spacing: 1.5vh;
 }
+
+.skill-row {}
+
+.skill-name {
+    font-weight: bold;
+    width: 25vh;
+}
+
+.skill-details {
+    text-align: justify;
+}
+
+
